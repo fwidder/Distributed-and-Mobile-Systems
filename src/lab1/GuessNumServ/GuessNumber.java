@@ -1,11 +1,4 @@
 
-/**
- * A servlet that demonstrates how session tracking can be used to count the
- * number of requests made during a session. Note that the servlet requires some
- * Java Enterprise edition API and a compatible web server
- *
- * @author Andrew Ensor
- */
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
@@ -14,7 +7,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
+/**
+ * 
+ * @author Florian Widder
+ *
+ */
 public class GuessNumber extends HttpServlet {
 
     private final char QUOTE = '"';
