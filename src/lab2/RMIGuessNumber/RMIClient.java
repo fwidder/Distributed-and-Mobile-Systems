@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab2.RMIGuessNumber;
 
 import java.rmi.NotBoundException;
@@ -12,8 +8,9 @@ import java.rmi.registry.Registry;
 import java.util.Scanner;
 
 /**
+ * @author Florian Widder
+ * @author Student ID 18999061
  *
- * @author mgamalik
  */
 public class RMIClient {
 
@@ -36,6 +33,7 @@ public class RMIClient {
 				right = remoteProxy.getNumber().endsWith(" is it!");
 			}
 			remoteProxy.restart();
+			input.close();
 		} catch (RemoteException e) {
 			System.err.println("Unable to use registry: " + e);
 		} catch (NotBoundException e) {
