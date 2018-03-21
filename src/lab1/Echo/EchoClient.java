@@ -24,7 +24,8 @@ public class EchoClient
    
    public void startClient()
    {  Socket socket = null;
-      Scanner keyboardInput = new Scanner(System.in);
+      @SuppressWarnings("resource")
+	Scanner keyboardInput = new Scanner(System.in);
       try
       {  socket = new Socket(HOST_NAME, HOST_PORT);
       }

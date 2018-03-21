@@ -58,6 +58,7 @@ public class AnimationSender {
 
 	public void send() { // prepare a timer to swap between the images every 150ms
 		Timer timer = new Timer(150, new ActionListener() {
+			@SuppressWarnings("synthetic-access")
 			public void actionPerformed(ActionEvent e) {
 				swapFrame();
 			}

@@ -30,13 +30,24 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
+/**
+ * @author Florian Widder
+ * @author Student ID 18999061
+ *
+ */
 @SuppressWarnings("serial")
 public class AnimationReceiver extends JPanel {
+	/**
+	 * 
+	 */
 	public static final int PORT = 8889; // host port number
 	private final int PANEL_WIDTH = 300, PANEL_HEIGHT = 400;
 	private BufferedImage animatedImage;
 	private boolean stopRequested;
 
+	/**
+	 * 
+	 */
 	public AnimationReceiver() {
 		setPreferredSize(new Dimension(PANEL_WIDTH, PANEL_HEIGHT));
 		setBackground(Color.WHITE);
@@ -45,6 +56,9 @@ public class AnimationReceiver extends JPanel {
 		stopRequested = false;
 	}
 
+	/**
+	 * 
+	 */
 	public void receive() {
 		try {
 			System.out.println("Receiver started at " + InetAddress.getLocalHost() + " on port " + PORT);

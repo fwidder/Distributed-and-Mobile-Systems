@@ -92,7 +92,8 @@ public class GuessServer
          this.socket = socket;
       }
       
-      public void run()
+      @SuppressWarnings("synthetic-access")
+	public void run()
       {  PrintWriter pw; // output stream to client
          BufferedReader br; // input stream from client
          try
