@@ -9,9 +9,9 @@ import java.rmi.RemoteException;
  *
  */
 public interface RMIGuessNumber extends Remote {
-	public String getNumber() throws RemoteException;
+    public String getNumber() throws RemoteException;
 
-	public void setGuess(int number) throws RemoteException;
+    public void restart() throws RemoteException;
 
-	public void restart() throws RemoteException;
+    public void setGuess(int number) throws RemoteException;
 }
